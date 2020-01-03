@@ -1,5 +1,7 @@
 # PR Comment Action
 
+This is just a test message!
+
 Adds a comment to a given Pull Request
 
 ## Required arguments
