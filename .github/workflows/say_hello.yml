@@ -14,5 +14,11 @@ jobs:
       - name: Say hello in a PR comment
         uses: trendyminds/github-actions-pr-comments@master
         with:
-          body: "Hello, there!"
+          body: |
+            Hello, there! **Welcome** to a great comment posted by our friendly bot helper!
+
+            - Here
+            - is
+            - a
+            - list
           github_token: ${{secrets.GITHUB_TOKEN}}
