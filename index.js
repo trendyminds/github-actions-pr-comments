@@ -22,6 +22,10 @@ const github = require("@actions/github");
 
     console.log(currentComments);
 
+    currentComments.data.forEach(comment => {
+      console.log(comment.user, comment.body);
+    });
+
     octokit.issues.createComment({
       ...context.repo,
       issue_number: pull_request_number,
