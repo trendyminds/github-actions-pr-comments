@@ -2,6 +2,8 @@
 
 This is just a test!
 
+And this is another test to check multiple actions!
+
 Adds a comment to a given Pull Request
 
 ## Required arguments
