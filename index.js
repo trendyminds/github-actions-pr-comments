@@ -26,6 +26,12 @@ const github = require("@actions/github");
       comment => comment.type === "Bot" && comment.body === body
     );
 
+    if (botComments.length > 0) {
+      console.log(
+        "This comment has already been posted by our bot. Skipping this process."
+      );
+    }
+
     // If this comment has not been made then add it
     if (botComments.length === 0) {
       octokit.issues.createComment({
