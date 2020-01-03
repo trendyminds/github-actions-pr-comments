@@ -1,0 +1,13 @@
+
+name: 'PR Comments'
+description: 'Adds a comment to a given Pull Request'
+inputs:
+  body:
+    description: 'The message body to add to the given pull request'
+    required: true
+  github_token:
+    description: 'The GitHub token of the repository (automatically created by GitHub)'
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'
