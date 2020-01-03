@@ -2,8 +2,6 @@
 
 This is just a test message!
 
-And here's another one to confirm we don't get duplicate PR comments!
-
 Adds a comment to a given Pull Request
 
 ## Required arguments
