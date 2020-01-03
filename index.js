@@ -15,6 +15,13 @@ const github = require("@actions/github");
     const pull_request_number = context.payload.pull_request.number;
     const octokit = new github.GitHub(github_token);
 
+    const currentComments = octokit.issues.listComments({
+      ...context.repo,
+      issue_number: pull_request_number
+    });
+
+    console.log(currentComments);
+
     octokit.issues.createComment({
       ...context.repo,
       issue_number: pull_request_number,
