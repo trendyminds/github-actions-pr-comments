@@ -21,6 +21,8 @@ const github = require("@actions/github");
       issue_number: pull_request_number
     });
 
+    console.log(currentComments.data, body);
+
     // Check if this comment had already been posted
     const botComments = currentComments.data.filter(
       comment => comment.type === "Bot" && comment.body === body
